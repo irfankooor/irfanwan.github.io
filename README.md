@@ -9,21 +9,37 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+ Command line instructions
+Git global setup
 
-# Header 1
-## Header 2
-### Header 3
+git config --global user.name "irfan kurniawan"
+git config --global user.email "noursirfan@gmail.com"
 
-- Bulleted
-- List
+Create a new repository
 
-1. Numbered
-2. List
+git clone https://gitlab.com/noursirfan/example.git
+cd example
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
 
-**Bold** and _Italic_ and `Code` text
+Existing folder
 
-[Link](url) and ![Image](src)
+cd existing_folder
+git init
+git remote add origin https://gitlab.com/noursirfan/example.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Existing Git repository
+
+cd existing_repo
+git remote add origin https://gitlab.com/noursirfan/example.git
+git push -u origin --all
+git push -u origin --tags
+
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
